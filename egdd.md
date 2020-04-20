@@ -1,183 +1,178 @@
----
-waltz:
-  title: Educational Game Design Document Template
-meta:
-  version: 0.0.2
-  gdd authors:
-    - Your name goes here
-  template authors:
-    - Austin Cory Bart <acbart@udel.edu>
-    - Mark Sheriff
-    - Alec Markarian
-    - Benjamin Stanley
----
+# Game Name
 
-# Overview
-
-*Notes written in italics must be deleted in the final version.*
+Recycle or not Recycle?
 
 ## Elevator Pitch
 
-*A one sentence pitch for your game. Pretend that your were pitching your game to a executive going to the elevator. You have less than 60 Seconds. Check [this resource](http://www.gameacademy.com/perfecting-indie-games-elevator-pitch/) for more information.*
+The United States Environmental Protection Agency estimates that 75% of American waste stream is recyclable but we only recycle about 30% of it. You will learn about the types of recycling with its associated color and what is acceptable in each category. Save the planet one can at a time. 
+
 
 ## Influences (Brief)
 
 - *Influence #1*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
+  - Medium: Johns Hopkins University
+  - Explanation: Each trashcan is separated into three containers (green for recycling, yellow for compost, and gray for incineration).
 - *Influence #2*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
-- *Influence #3*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
+  - Medium: Personal knowledge/experiences
+  - Explanation: We were not taught the different types of recycling and also the University of Delaware does not practice categorizes waste. 
+
 
 ## Core Gameplay Mechanics (Brief)
 
-*Give a very high-level description of any core gameplay mechanics*
-
-- *Gameplay Mechanic #1*
-- *Gameplay Mechanic #2*
-- *Gameplay Mechanic #3*
-- *Gameplay Mechanic #4*
+- Different Trash type.(Recycle/chemical/Disposable/Non-Disposable)
+- Points increment if object is put into the correct container
+- Click/drag mouse to select object and specify container
+- Knowledge prompt for wrong items collecting.
 
 # Learning Aspects
 
 ## Learning Domains
 
-*Briefly list any and all of the disciplines and learning domains for this subject.*
+Identify which trash is disposable and which is non-disposable.
 
 ## Target Audiences
 
-*Who are your learners?*
+Ages 6+
 
 ## Target Contexts
 
-*Describe what kinds of formal and informal learning contexts this will be used in (e.g., courses, k-12 computer labs during free time).*
+1 - 9 grade courses
 
 ## Learning Objectives
 
-*Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.*
-
-- *Formal Learning Objective #1*
-- *Formal Learning Objective #2*
-- *Formal Learning Objective #3*
+- Determine correct disposal for waste.
+- Identify recycling options. 
 
 ## Prerequisite Knowledge
 
 *What do they need to know prior to trying this game?*
 
-- *Prerequisite Learning Objective #1*
-- *Prerequisite Learning Objective #2*
+- Know how to click mouse .
+- Can read the text and image.
 
 ## Assessment Measures
 
-*Describe how the learning will be assessed, e.g., pre/post multiple-choice test, or SAT, or some other instrument.*
-
-*If proposing a new instrument, briefly and concisely list some example assessment questions.*
+Learning assessment will be carried during the game by clicking the correct objects.
+If they click the correct objects, the point will be added, and vice versa. 
 
 # What sets this project apart?
 
-- *Reason #1*
-- *Reason #2*
-- *Reason #3*
-- *Reason #4*
-- *etc.*
+- As we learn more about the negative effects of humans, the importance of protecting our enviroment increases daily.
+- We have to teach children, from a young age, how to dispose of their trash properly.
+- Game are kids friendly with cartoons and animation while adults can also learn more about how to recycle and why it is important.
+- Everyone makes waste everyday and so this game is relevant to everyone. 
 
 # Player Interaction Patterns and Modes
 
 ## Player Interaction Pattern
 
-*How many players / how it works / etc.*
+One player can play at once, but two or three can watch and give suggestion.
 
 ## Player Modes
 
-- *Player mode #1*: *Description*
-- *Player mode #2*: *Description*
-- *etc.*
+- Tutorial: Display trash from each category and give a demo of gameplay.
+- Game Play: Respawn different type of trash for player to interact.
+- Result: Summarize player's performace and give knowledge accordingly.
 
 # Gameplay Objectives
+- Identify color of specified recycling type:
+    - Description: Given a recycling type (i.e. plastic, class, compost), click on the correct color of the corresponding container would be.
+- Identify correct container for waste:
+    - Description: Click and drag the piece of waste given to the appropriate container. 
 
-- *Primary Objective #1*: *Description*
-- *Primary Objective #2*: *Description*
-- *etc.*
 
 # Procedures/Actions
 
-*Describe the control scheme and what actions a user can take in the game.*
+Mouse: Left click to drag the trash.
+Trash: Movable entities that can be dragged.
+Trash bin: Detect if the correct trash is overlapped with bin.
 
 # Rules
-
-*What resources are available to the player that they make use of?  How does this affect gameplay?*
+Game will respawn varies obejcts sequently from screen edge to the other side. Player need to collect as many correct objects in a limited time, 
+any wrong object collected will deduct points from total. Dangerous object that in the scene will not go away unless collected, every period that dangerous
+object exists will deduct certain points from total. When the time is up, total score will be your score.
 
 # Objects/Entities
 
-*What other things are in the world that you need to design?*
+Trash(List different trash)
+Trash bin(3-5 different trash bins for different trash)
 
 ## Core Gameplay Mechanics (Detailed)
 
-  - *Core Gameplay Mechanic #1*
-    - Details: *Describe in 2 paragraphs or less*
-    - How it works: *Describe in 2 paragraphs or less*
-  - *Core Gameplay Mechanic #2*
-    - Details: *Describe in 2 paragraphs or less*
-    - How it works: *Describe in 2 paragraphs or less*
-  - *Core Gameplay Mechanic #3*
-    - Details: *Describe in 2 paragraphs or less*
-    - How it works: *Describe in 2 paragraphs or less*
-  - *Core Gameplay Mechanic #4*
-    - Details: *Describe in 2 paragraphs or less*
-    - How it works: *Describe in 2 paragraphs or less*
+- Different Trash type will be randomly generated from the list at the bottom of the screen.
+- 3 - 5 trash bins will be on the top side of the screen
+- Mouse drag trash with left click
+- if correct trash overlap with correct trash bin, you will earn point; otherwise lose point.
+
     
 ## Feedback
 
-*Explicitly describe what visual/audio/etc. indicators there that give players feedback on their progress towards their gameplay objectives (and ideally the learning objectives).*
+Player can clearly see points add/deduct from the score board in the screen. Right/Wrong click will also turn trash bin into green/red for seconds.
 
 # Story and Gameplay
 
+## Presentation of Rules
+
+The game will provide tutorial and explain mouse function, how to earn point and how will you lose point. It will also give demo of a simple gameplay.
+
+## Presentation of Content
+
+Once the wrong trash has been placed, game will prompt a knowledge about why this should/shouldn't be considered in this category. 
+
 ## Story (Brief)
 
-*The Summary or TL;DR version of below*
+Trash sorting is a very important thing for the society, it can not only reduce the waste that should be recycled but also provide a cleaner environment. Sorting needs people to be more awared of which trash belongs to where, for example, a plastic bottle should be recycled and battery should not go to landfill.
 
-## Story (Detailed)
+## Storyboarding
 
-*Go into as much detail as needs be. Spare no detail. Use Mind Mapping software to get your point across*
-
-## Gameplay (Brief)
-
-*The Summary version of below*
-
-## Gameplay (Detailed)
-
-*Go into as much detail as needs be. Spare no detail. Combine this with the game mechanics section above*
+*Go into as much detail as needs be to visually convey the Dynamics of your game. Be detailed. Create storyboards and freeze frame images that concisely capture important key elements of your game. You are strongly recommended to sketch pictures on paper and embed them here. Be sure make it clear how previously-described mechanics come through in the dynamics.*
 
 # Assets Needed
 
+## Aethestics
+
+Game will be using many realistic objects, people will be familiarize with the trash so they can easy recognize with their life experience.
+
 ## Graphical
 
-- Characters List
-  - *Characters 1*
-  - *Characters 2*
-  - *...*
+- Trash list
+  - battery
+  - computer
+  - plastic bottle
+  - plastic bag
+  - tissue
+  - food
+  - used syringes
+  - takeout bag
+  - wood
+  - electronic component  
+  - paper
+  - 
 - Textures:
-  - *Texture 1*
-  - *Texture 2*
-  - *...*
+  - trash bin(red)
+  - trash bin(blue)
+  - trash bin(yellow)
+  - trash bin(green)
+  - trash bin(white)
 - Environment Art/Textures:
-  - *Environment Texture 1*
-  - *Environment Texture 2*
-  - *...*
+  - landfill background
+
 
 ## Audio
+
 
 *Game region/phase/time are ways of designating a particularly important place in the game.*
 
 - Music List (Ambient sound)
-  - *Game region/phase/time*: *Example 1*, *Example 2*
-  - *Game region/phase/time*: *Example 3*, *Example 4*
+    - TBD
   
 *Game Interactions are things that trigger SFX, like character movement, hitting a spiky enemy, collecting a coin.*
 
 - Sound List (SFX)
-  - *Game Interaction*: *Example 1*, *Example 2*
-  - *Game Interaction*: *Example 3*, *Example 4*
+  - TBD
+
+
+# Metadata
+
+* Template created by Austin Cory Bart <acbart@udel.edu>, Mark Sheriff, Alec Markarian, and Benjamin Stanley.
+* Version 0.0.3
