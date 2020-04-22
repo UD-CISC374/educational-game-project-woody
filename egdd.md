@@ -36,7 +36,7 @@ Ages 6+
 
 ## Target Contexts
 
-1 - 9 grade courses
+1 - 6 grade courses
 
 ## Learning Objectives
 
