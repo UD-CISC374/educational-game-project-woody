@@ -4,10 +4,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "assets/citations.md"
   },
   {
-    "revision": "53cefca2a0f75654486b180949686165",
-    "url": "assets/icons/favicon.ico"
-  },
-  {
     "revision": "8ab30def0ad109a97117bd62db942d75",
     "url": "assets/icons/icons-16.png"
   },
@@ -70,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "47f94d94dc2116a8a256bc57edce0cbf",
     "url": "assets/images/soda.png"
+  },
+  {
+    "revision": "53cefca2a0f75654486b180949686165",
+    "url": "favicon.ico"
   },
   {
     "revision": "9a5ab1fa24c9b8aceb28eee5e66370f1",
