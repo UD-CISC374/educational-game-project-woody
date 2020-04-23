@@ -1,5 +1,9 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
+    "revision": "81c7b110dc744add1c8adfe8d840f168",
+    "url": "/educational-phaser-game-template/alphaassets/.DS_Store"
+  },
+  {
     "revision": "aeda7809f3dd54aa53a233448b5a7b50",
     "url": "/educational-phaser-game-template/alphaassets/citations.md"
   },
@@ -24,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/educational-phaser-game-template/alphaassets/icons/icons8-game-controller-16.png"
   },
   {
-    "revision": "1ade6f9b00c80025fa3902b7db736ff9",
+    "revision": "f6be67c5c6d974d328774d1d74e0c13e",
     "url": "/educational-phaser-game-template/alphaassets/images/background.png"
   },
   {
@@ -76,15 +80,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/educational-phaser-game-template/alphafavicon.ico"
   },
   {
-    "revision": "4a12b3786533b7ea3a88",
-    "url": "/educational-phaser-game-template/alphagen.main.5157372b4751360c8dfe.bundle.js"
+    "revision": "7f4c8cd72de3ecba4069",
+    "url": "/educational-phaser-game-template/alphagen.main.74c665848a20ad755ef9.bundle.js"
   },
   {
     "revision": "8857aeb5de5dfb8b65cf",
     "url": "/educational-phaser-game-template/alphagen.vendors.a830139833da967256f6.bundle.js"
   },
   {
-    "revision": "2fc2859c00426452cb0e7cc34587a850",
+    "revision": "8fed8a7d7ad9fd3b7cce35e12f492490",
     "url": "/educational-phaser-game-template/alphaindex.html"
   },
   {
