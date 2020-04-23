@@ -1,6 +1,8 @@
 import 'phaser';
-import MainScene from './scenes/mainScene';
+import MainScene from './scenes/gameScene';
 import PreloadScene from './scenes/preloadScene';
+import tutorial from './scenes/tutorial';
+
 import GameConfig = Phaser.Types.Core.GameConfig;
 
 const DEFAULT_WIDTH = 400;
@@ -16,12 +18,12 @@ const config: GameConfig = {
         width: DEFAULT_WIDTH,
         height: DEFAULT_HEIGHT
     },
-    scene: [PreloadScene, MainScene],
+    scene: [PreloadScene, MainScene, tutorial],
     physics: {
         default: 'arcade',
         arcade: {
             debug: false,
-            gravity: { y: 400 }
+
         }
     }
 };
@@ -29,5 +31,3 @@ const config: GameConfig = {
 window.addEventListener('load', () => {
     window['game'] = new Phaser.Game(config);
 });
-
-//
