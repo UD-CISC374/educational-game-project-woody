@@ -1,5 +1,9 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
+    "revision": "81c7b110dc744add1c8adfe8d840f168",
+    "url": "assets/.DS_Store"
+  },
+  {
     "revision": "aeda7809f3dd54aa53a233448b5a7b50",
     "url": "assets/citations.md"
   },
@@ -24,7 +28,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "assets/icons/icons8-game-controller-16.png"
   },
   {
-    "revision": "1ade6f9b00c80025fa3902b7db736ff9",
+    "revision": "f6be67c5c6d974d328774d1d74e0c13e",
     "url": "assets/images/background.png"
   },
   {
@@ -76,12 +80,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "favicon.ico"
   },
   {
-    "revision": "ab9790e55705b45820249308acb1283d",
+    "revision": "ebf388f986c89e2aea93f4d719d9678a",
     "url": "index.html"
   },
   {
-    "revision": "b5d347e34f828136644d",
-    "url": "main.43a2e65c94f6234b4ff9.bundle.js"
+    "revision": "67e65275ef5da202c6df",
+    "url": "main.df5e952bd336dadb0ef9.bundle.js"
   },
   {
     "revision": "003187cab0ecf7a20e343e2ba6db4a34",
