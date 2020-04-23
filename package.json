@@ -1,9 +1,22 @@
 {
   "name": "educational-phaser-game-template",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Phaser 3 starter template for educational games, using TypeScript, webpack, and Github Pages.",
   "homepage": "https://github.com/acbart/educational-phaser-game-template#readme",
   "main": "index.js",
+  "game": {
+    "url": "educational-phaser-game-template",
+    "shortName": "EdGame",
+    "name": "Educational Phaser Game Template"
+  },
+  "author": {
+    "name": "Austin Cory Bart",
+    "url": "https://github.com/acbart"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/acbart/educational-phaser-game-template.git"
+  },
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.dev.js",
     "build": "webpack --config config/webpack.prod.js",
@@ -13,25 +26,6 @@
     "deploy-final": "webpack --config config/webpack.deploy.js --env.endpoint=final && gh-pages -d dist",
     "deploy-all": "gh-pages -d dist"
   },
-  //having problem with deployment, 
-  /*sh: webpack-dev-server: command not found
-  npm ERR! code ELIFECYCLE
-  npm ERR! syscall spawn
-  npm ERR! file sh
-  npm ERR! errno ENOENT
-  npm ERR! educational-phaser-game-template@0.0.1 start: `webpack-dev-server --config config/webpack.dev.js`
-  npm ERR! spawn ENOENT
-  npm ERR! 
-  npm ERR! Failed at the educational-phaser-game-template@0.0.1 start script.
-  npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-  npm WARN Local package.json exists, but node_modules missing, did you mean to install?
-
-  npm ERR! A complete log of this run can be found in:
-  npm ERR!     /Users/woodyhu/.npm/_logs/2020-04-22T19_26_11_417Z-debug.log
-  The terminal process terminated with exit code: 1
-
-  Terminal will be reused by tasks, press any key to close it.
-  */
   "keywords": [
     "Phaser",
     "Phaser 3",
@@ -44,14 +38,6 @@
     "Github Pages",
     "starter"
   ],
-  "author": {
-    "name": "Austin Cory Bart",
-    "url": "https://github.com/acbart"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/acbart/educational-phaser-game-template.git"
-  },
   "template": {
     "name": "educational-phaser-game-template",
     "url": "https://github.com/acbart/educational-phaser-game-template",
@@ -68,12 +54,12 @@
     "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^3.2.0",
     "ts-loader": "^5.4.5",
-    "typescript": "^3.7.5",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
     "webpack-merge": "^4.2.2",
-    "webpack-obfuscator": "^0.18.8",
+    "webpack-obfuscator": "^0.27.2",
     "workbox-webpack-plugin": "^4.3.1"
   },
   "dependencies": {
