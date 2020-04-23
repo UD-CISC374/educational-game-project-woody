@@ -72,19 +72,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/educational-phaser-game-template/alphaassets/images/soda.png"
   },
   {
-    "revision": "2788294587377db13689",
-    "url": "/educational-phaser-game-template/alphagen.main.03860022660299ddfb9c.bundle.js"
+    "revision": "53cefca2a0f75654486b180949686165",
+    "url": "/educational-phaser-game-template/alphafavicon.ico"
   },
   {
-    "revision": "201b65bee9df6270f739",
-    "url": "/educational-phaser-game-template/alphagen.vendors.a047ee0740c7d21714d9.bundle.js"
+    "revision": "4a12b3786533b7ea3a88",
+    "url": "/educational-phaser-game-template/alphagen.main.5157372b4751360c8dfe.bundle.js"
   },
   {
-    "revision": "347e7edeb888f395878ef8dc8d07bddf",
+    "revision": "8857aeb5de5dfb8b65cf",
+    "url": "/educational-phaser-game-template/alphagen.vendors.a830139833da967256f6.bundle.js"
+  },
+  {
+    "revision": "2fc2859c00426452cb0e7cc34587a850",
     "url": "/educational-phaser-game-template/alphaindex.html"
   },
   {
-    "revision": "fc8cefcfb102b35601f09d51ee2512ef",
+    "revision": "003187cab0ecf7a20e343e2ba6db4a34",
     "url": "/educational-phaser-game-template/alphamanifest.json"
   },
   {
