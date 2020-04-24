@@ -1,21 +1,21 @@
 {
-  "name": "educational-phaser-game-template",
+  "name": "educational-game-project-amelia-and-woody",
   "version": "0.0.2",
-  "description": "Phaser 3 starter template for educational games, using TypeScript, webpack, and Github Pages.",
-  "homepage": "https://github.com/acbart/educational-phaser-game-template#readme",
+  "description": "Woody and amelia final project game about learning to sort the trash",
+  "homepage": "https://github.com/UD-CISC374/educational-game-project-amelia-and-woody/blob/master/egdd.md",
   "main": "index.js",
   "game": {
-    "url": "educational-phaser-game-template",
-    "shortName": "EdGame",
-    "name": "Educational Phaser Game Template"
+    "url": "educational-game-project-amelia-and-woody",
+    "shortName": "RecycleOrNot?",
+    "name": "Recycle or not recycle"
   },
   "author": {
-    "name": "Austin Cory Bart",
-    "url": "https://github.com/acbart"
+    "name": "Zhongyuan Hu",
+    "url": "https://github.com/Woodyhu96"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/acbart/educational-phaser-game-template.git"
+    "url": "https://github.com/UD-CISC374/educational-game-project-amelia-and-woody"
   },
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.dev.js",
