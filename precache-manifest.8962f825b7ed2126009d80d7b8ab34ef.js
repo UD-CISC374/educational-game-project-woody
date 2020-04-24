@@ -4,7 +4,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "assets/.DS_Store"
   },
   {
-    "revision": "aeda7809f3dd54aa53a233448b5a7b50",
+    "revision": "b13eebbe4d39fbd24731cdb0905fb8fc",
     "url": "assets/citations.md"
   },
   {
@@ -34,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "67c0d30cc8166c00992dd4d7c8333861",
     "url": "assets/images/battery.png"
-  },
-  {
-    "revision": "acbaa6797a09dfe9bd3fb92e6efd5366",
-    "url": "assets/images/clothesButton.png"
   },
   {
     "revision": "39a8e94681f546ca8e0ac14b2d27bd92",
@@ -80,7 +76,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "favicon.ico"
   },
   {
-    "revision": "ebf388f986c89e2aea93f4d719d9678a",
+    "revision": "d85d2b714e87e62874dc442a1eb421f4",
     "url": "index.html"
   },
   {
