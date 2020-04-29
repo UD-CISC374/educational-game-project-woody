@@ -36,10 +36,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/educational-game-project-amelia-and-woody/betaassets/images/battery.png"
   },
   {
-    "revision": "4a15af7d1449bed9b3f29e47ea6f4c05",
-    "url": "/educational-game-project-amelia-and-woody/betaassets/images/citations.md"
-  },
-  {
     "revision": "90396c679fd1cc2a6b0d150269fe9b1a",
     "url": "/educational-game-project-amelia-and-woody/betaassets/images/click-1.png"
   },
