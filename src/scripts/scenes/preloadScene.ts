@@ -7,6 +7,7 @@ export default class PreloadScene extends Phaser.Scene {
 
     this.load.image("partyButton", "assets/images/partyButton.png");
     this.load.image("background", "assets/images/background.png");
+    this.load.image("background-1", "assets/images/background-1.png");
     this.load.image("home","assets/images/home.png");
     this.load.image("electronic", "assets/images/electronic.png");
     this.load.image("medical", "assets/images/medical.png");
@@ -23,6 +24,8 @@ export default class PreloadScene extends Phaser.Scene {
     this.load.image("readytext","assets/images/readytext.png");
     this.load.image("tutorialset","assets/images/tutorialset.png");
     this.load.image("gametitle","assets/images/gametitle.png");
+    this.load.image("instruction","assets/images/instruction.png");
+    this.load.image("hint","assets/images/hint.png");
   }
 
   create() {

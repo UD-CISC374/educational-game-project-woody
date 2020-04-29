@@ -18,6 +18,7 @@ export default class gameScene extends Phaser.Scene {
   private done: any;
   private index: any;
   private dragObj: any;
+  private hint:any;
 
   constructor() {
     super({ key: 'MainScene' });
@@ -31,9 +32,11 @@ export default class gameScene extends Phaser.Scene {
     .setInteractive()
     .on('pointerdown', ()=>this.goHome());
     this.totorial_button.setScale(0.5);
+    
     this.done=false;
-    //Add instruction
-    this.add.text(500,50,"Drag trash to correct trash bin.",{fill:"#000000", fontSize:"16px"});
+    //Add hint
+    this.hint = this.add.image(500,50,"hint");
+    this.hint.setScale(0.7);
 
     //Make list of items for this level
     this.items = ["computer", "pbottle", "soda","battery"];
@@ -43,38 +46,38 @@ export default class gameScene extends Phaser.Scene {
     this.alltrash = [];
     
     //Make recycle
-    this.recycle=this.physics.add.image(100,800,"recycle");
+    this.recycle=this.physics.add.image(100,250,"recycle");
     this.recycle.setScale(0.2);
     //Make electronic
-    this.electronic = this.physics.add.image(350,800,"electronic");
+    this.electronic = this.physics.add.image(350,215,"electronic");
     this.electronic.setScale(0.2);
     //Make harmful
-    this.harmful = this.physics.add.image(600,800,"harmful");
+    this.harmful = this.physics.add.image(600,215,"harmful");
     this.harmful.setScale(0.2);
     //Make medical
-    this.medical = this.physics.add.image(850,800,"medical");
+    this.medical = this.physics.add.image(850,250,"medical");
     this.medical.setScale(0.2);
 
     //Make battery
-    this.battery=this.physics.add.image(200,260,"battery");
+    this.battery=this.physics.add.image(200,760,"battery");
     this.battery.setScale(0.2);
     this.battery.setInteractive();
     this.input.setDraggable(this.battery);
 
     //Make computer
-    this.computer=this.physics.add.image(320, 360, "computer");
+    this.computer=this.physics.add.image(320, 600, "computer");
     this.computer.setScale(0.2);
     this.computer.setInteractive();
     this.input.setDraggable(this.computer);
 
     //Make pbottle
-    this.pbottle=this.physics.add.image(800,360,"pbottle");
+    this.pbottle=this.physics.add.image(800,700,"pbottle");
     this.pbottle.setScale(0.1);
     this.pbottle.setInteractive();
     this.input.setDraggable(this.pbottle);
 
     //Make soda
-    this.soda=this.physics.add.image(600,300,"soda");
+    this.soda=this.physics.add.image(600,500,"soda");
     this.soda.setScale(0.05);
     this.soda.setInteractive();
     this.input.setDraggable(this.soda);

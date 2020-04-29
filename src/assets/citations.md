@@ -17,3 +17,5 @@ thumbsup:
 https://www.google.com/search?q=thumbs+up+cartoon&tbm=isch&source=iu&ictx=1&fir=KoxHnrvOraF6fM%253A%252CX2ff1eEhNdlVSM%252C_&vet=1&usg=AI4_-kR_nvSfHvHvXi56DMJN5-8KqtbR1A&sa=X&ved=2ahUKEwi5sMiRmo7pAhXtGTQIHdNRAGYQ9QEwAHoECAoQMA#imgrc=2RCnnenB_wdpSM&imgdii=beOMhDHceaSoHM
 gametitle:
 https://www6.flamingtext.com/net-fu/jobs/26645301503286310.html
+convavey belt:
+https://www.google.com/search?q=conveyor+belt+cartoon&tbm=isch&ved=2ahUKEwiJz82nqo7pAhWNADQIHYC2A4UQ2-cCegQIABAA&oq=conveyor+belt+cartoon&gs_lcp=CgNpbWcQAzICCAAyAggAMgIIADICCAAyAggAMgYIABAFEB4yBggAEAUQHjIGCAAQBRAeMgYIABAFEB4yBggAEAUQHlC4fliJhQFgs4YBaABwAHgAgAGzAogB6wqSAQUyLTQuMZgBAKABAaoBC2d3cy13aXotaW1n&sclient=img&ei=MNCpXon3C42B0PEPgO2OqAg&bih=734&biw=923&hl=en#imgrc=iZmcAeZNPzfN4M&imgdii=p2ODxGhWFDNZwM
