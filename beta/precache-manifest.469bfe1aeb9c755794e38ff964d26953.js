@@ -4,6 +4,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/educational-game-project-amelia-and-woody/betaassets/.DS_Store"
   },
   {
+    "revision": "9741585193b7667aa9f831627b21230b",
+    "url": "/educational-game-project-amelia-and-woody/betaassets/citations.md"
+  },
+  {
     "revision": "99cdea92a03a1b8bb24373d1d59d02ac",
     "url": "/educational-game-project-amelia-and-woody/betaassets/icons/favicon.ico"
   },
@@ -30,10 +34,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "67c0d30cc8166c00992dd4d7c8333861",
     "url": "/educational-game-project-amelia-and-woody/betaassets/images/battery.png"
-  },
-  {
-    "revision": "9741585193b7667aa9f831627b21230b",
-    "url": "/educational-game-project-amelia-and-woody/betaassets/images/citations.md"
   },
   {
     "revision": "90396c679fd1cc2a6b0d150269fe9b1a",
