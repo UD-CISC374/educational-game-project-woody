@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8e9f6b8076b90f2607499e46fdd779b",
+    "revision": "6fc27ee91b390fdecf2fc695429dd8ad",
     "url": "/educational-game-project-amelia-and-woody/betaassets/.DS_Store"
   },
   {
