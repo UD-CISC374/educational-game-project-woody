@@ -111,6 +111,16 @@ export default class gameScene extends Phaser.Scene {
     this.movetrash(this.pbottle);
     this.movetrash(this.computer);
     this.movetrash(this.battery);
+    this.movetrash(this.battery);
+    this.movetrash(this.battery);
+    this.movetrash(this.battery);
+    this.movetrash(this.battery);
+    this.movetrash(this.battery);
+    this.movetrash(this.battery);
+    this.movetrash(this.battery);
+    this.movetrash(this.battery);
+    this.movetrash(this.battery);
+    this.movetrash(this.battery);
     
     this.scoreLabel.text = "SCORE: " + this.score;
     let allThere = 0;
