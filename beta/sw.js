@@ -1,4 +1,4 @@
-importScripts("/educational-game-project-amelia-and-woody/betaprecache-manifest.1b6ee3da7c6269420c249b311ca2e50c.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/educational-game-project-amelia-and-woody/betaprecache-manifest.213e4295b397e4f9f9b81ae343806657.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /**
  * You should only modify this, if you know what you are doing.
