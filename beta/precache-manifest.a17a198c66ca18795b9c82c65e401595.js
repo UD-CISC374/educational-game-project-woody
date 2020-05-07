@@ -136,15 +136,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/educational-game-project-amelia-and-woody/betafavicon.ico"
   },
   {
-    "revision": "c0fd199b718feb6aaf50",
-    "url": "/educational-game-project-amelia-and-woody/betagen.main.8f720096076ee0266e38.bundle.js"
+    "revision": "5281a19f2c7b518d24b0",
+    "url": "/educational-game-project-amelia-and-woody/betagen.main.56d09415feb1ac4135f1.bundle.js"
   },
   {
     "revision": "8857aeb5de5dfb8b65cf",
     "url": "/educational-game-project-amelia-and-woody/betagen.vendors.a830139833da967256f6.bundle.js"
   },
   {
-    "revision": "bba774f9dd682bd3aa95a4cd79ffa0b4",
+    "revision": "7b11c170e2df280a0aff78d8c146ef8a",
     "url": "/educational-game-project-amelia-and-woody/betaindex.html"
   },
   {
