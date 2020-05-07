@@ -111,15 +111,16 @@ export default class gameScene extends Phaser.Scene {
     this.movetrash(this.pbottle);
     this.movetrash(this.computer);
     this.movetrash(this.battery);
-    this.scoreLabel.text = "SCORE " + this.score;
+    this.scoreLabel.text = "SCORE: " + this.score;
     let allThere = 0;
     for (let index = 0; index < this.items.length; index++){
       allThere = this.alltrash.includes(this.items[index]) + allThere;
     }
     if (allThere == this.items.length -1 ){
-      this.done == true;
+      
       this.add.image(500,500,"congrats");
-      this.add.text(400,750,"Your score is: "+ this.score);
+      this.add.text(400,750,"Your Score is "+ this.score);
+      this.done == true;
     }
     else{
       this.done == false;
@@ -132,7 +133,9 @@ export default class gameScene extends Phaser.Scene {
 
   }
   movetrash(trash){
-    trash.x += 1;
+    if(trash.y >500){
+      trash.x += 1
+    };
     if(trash.x > 1200){
       var randomx = Phaser.Math.Between(-50, -200);
       trash.x = randomx;
