@@ -40,6 +40,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "assets/images/belt.png"
   },
   {
+    "revision": "9741585193b7667aa9f831627b21230b",
+    "url": "assets/images/citations.md"
+  },
+  {
     "revision": "90396c679fd1cc2a6b0d150269fe9b1a",
     "url": "assets/images/click-1.png"
   },
@@ -136,12 +140,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "favicon.ico"
   },
   {
-    "revision": "dd8ce6a688a4b289092edc3d6236810b",
+    "revision": "93ff3f1252b11eada92d95950b8c9310",
     "url": "index.html"
   },
   {
-    "revision": "4b1dc596956222dba2f1",
-    "url": "main.bc81dcecc0f49da8ccbe.bundle.js"
+    "revision": "41876ba8d1512dd7f494",
+    "url": "main.0d4a695c9bc776d8192b.bundle.js"
   },
   {
     "revision": "9236f0ee13fd2a278467ec3c6f655d4e",
