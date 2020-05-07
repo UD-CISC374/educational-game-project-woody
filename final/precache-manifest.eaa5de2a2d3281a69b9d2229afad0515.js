@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8e9f6b8076b90f2607499e46fdd779b",
+    "revision": "b31ed46aaf9a1d94e1d873375bed2413",
     "url": "/educational-game-project-amelia-and-woody/finalassets/.DS_Store"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/educational-game-project-amelia-and-woody/finalassets/icons/icons-512.png"
   },
   {
-    "revision": "1da2509991af9ac298aad19f9fb8ed2b",
+    "revision": "a3b10b5a3c743f12bd66f75509229544",
     "url": "/educational-game-project-amelia-and-woody/finalassets/images/.DS_Store"
   },
   {
@@ -28,12 +28,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/educational-game-project-amelia-and-woody/finalassets/images/background-1.png"
   },
   {
-    "revision": "59108b8a057ad4f1bee32a6c4c27d177",
+    "revision": "bb706b3659fd17d98622a940386a9346",
     "url": "/educational-game-project-amelia-and-woody/finalassets/images/background.png"
   },
   {
     "revision": "67c0d30cc8166c00992dd4d7c8333861",
     "url": "/educational-game-project-amelia-and-woody/finalassets/images/battery.png"
+  },
+  {
+    "revision": "e3d024c2ed9cf1501940b62f4647e956",
+    "url": "/educational-game-project-amelia-and-woody/finalassets/images/belt.png"
   },
   {
     "revision": "90396c679fd1cc2a6b0d150269fe9b1a",
@@ -50,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "39a8e94681f546ca8e0ac14b2d27bd92",
     "url": "/educational-game-project-amelia-and-woody/finalassets/images/computer.png"
+  },
+  {
+    "revision": "c4e2878631ea34dd08093ad8bd69ae4c",
+    "url": "/educational-game-project-amelia-and-woody/finalassets/images/congrats.png"
   },
   {
     "revision": "c86ccb57be243a3881a20b169061fa2e",
@@ -128,15 +136,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/educational-game-project-amelia-and-woody/finalfavicon.ico"
   },
   {
-    "revision": "b78b02fef474ac40522c",
-    "url": "/educational-game-project-amelia-and-woody/finalgen.main.45059df052889358f6e4.bundle.js"
+    "revision": "9521aaf399c9e970b4f9",
+    "url": "/educational-game-project-amelia-and-woody/finalgen.main.eebca220f0614cf4cdc7.bundle.js"
   },
   {
     "revision": "8857aeb5de5dfb8b65cf",
     "url": "/educational-game-project-amelia-and-woody/finalgen.vendors.a830139833da967256f6.bundle.js"
   },
   {
-    "revision": "3f04491454267ff60af617f13b37756d",
+    "revision": "49a21dc2e8e9880a2d678e1e0db4f928",
     "url": "/educational-game-project-amelia-and-woody/finalindex.html"
   },
   {
