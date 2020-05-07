@@ -110,7 +110,7 @@ export default class gameScene extends Phaser.Scene {
     this.movetrash(this.syringe);
     this.movetrash(this.pbottle);
     this.movetrash(this.computer);
-    this.movetrash(this.battery);
+    //this.movetrash(this.battery);
     this.scoreLabel.text = "SCORE: " + this.score;
     let allThere = 0;
     for (let index = 0; index < this.items.length; index++){
@@ -135,7 +135,7 @@ export default class gameScene extends Phaser.Scene {
   movetrash(trash){
     if(trash.y >500){
       trash.x += 1
-      
+
     };
     if(trash.x > 1200){
       var randomx = Phaser.Math.Between(-50, -200);
