@@ -135,6 +135,7 @@ export default class gameScene extends Phaser.Scene {
   movetrash(trash){
     if(trash.y >500){
       trash.x += 1
+      
     };
     if(trash.x > 1200){
       var randomx = Phaser.Math.Between(-50, -200);
