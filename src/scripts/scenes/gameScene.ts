@@ -87,7 +87,7 @@ export default class gameScene extends Phaser.Scene {
     this.input.setDraggable(this.syringe);
 
     //Make soda
-    this.soda=this.physics.add.image(-780,500,"soda");
+    this.soda=this.physics.add.image(-780,560,"soda");
     this.soda.setScale(0.05);
     this.soda.setInteractive();
     this.input.setDraggable(this.soda);
@@ -134,7 +134,7 @@ export default class gameScene extends Phaser.Scene {
 
   }
   movetrash(trash){
-    if(trash.y >500){
+    if(trash.y > 480){
       trash.x += 1
 
     };
@@ -224,13 +224,6 @@ export default class gameScene extends Phaser.Scene {
   doDrag(pointer){
     this.dragObj.x=pointer.x;
     this.dragObj.y=pointer.y;
-  }
-  zeroPad(number, size){
-    var stringNumber = String(number);
-    while(stringNumber.length < (size ||2)){
-      stringNumber = "0" + stringNumber;
-    }
-    return stringNumber;
   }
   stopDrag(){
     this.input.on('pointerdown', this.startDrag, this);
