@@ -5,7 +5,6 @@ export default class PreloadScene extends Phaser.Scene {
 
   preload() {
 
-    this.load.image("partyButton", "assets/images/partyButton.png");
     this.load.image("background", "assets/images/background.png");
     this.load.image("background-1", "assets/images/background-1.png");
     this.load.image("belt","assets/images/belt.png");
@@ -28,6 +27,14 @@ export default class PreloadScene extends Phaser.Scene {
     this.load.image("instruction","assets/images/instruction.png");
     this.load.image("hint","assets/images/hint.png");
     this.load.image("congrats", "assets/images/congrats.png");
+
+    this.load.audio("correct","assets/music/correct.wav");
+    this.load.audio("drag","assets/music/drag.wav");
+    this.load.audio("gameplay","assets/music/gameplaymusic.mp3");
+    this.load.audio("start","assets/music/start.wav");
+    this.load.audio("tutorial_music","assets/music/tutorialmusic.mp3");
+    this.load.audio("wrong","assets/music/wrong.wav");
+
   }
 
   create() {

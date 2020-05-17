@@ -23,6 +23,11 @@ export default class gameScene extends Phaser.Scene {
   private hint:any;
   private scoreLabel;
   private score: number;
+  private music: any;
+  private correctsound: any;
+  private wrongsound: any;
+  private dragsound: any;
+  private startsound: any;
   constructor() {
     super({ key: 'MainScene' });
   }
@@ -43,7 +48,7 @@ export default class gameScene extends Phaser.Scene {
     this.hint.setScale(0.7);
 
     //Make list of items for this level
-    this.items = ["computer", "pbottle", "soda","battery","syringe"];
+    this.items = ["computer", "pbottle", "soda","soda","battery","battery","syringe"];
     this.trashbin = ["harmful", "recycle", "electronic", "medical"];
 
     //Make list of items selected
@@ -94,13 +99,49 @@ export default class gameScene extends Phaser.Scene {
 
     //Set up dragging into basket
     this.input.on('pointerdown', this.startDrag, this);
-    this.physics.add.overlap(this.electronic, this.computer, this.pick, undefined, this);
     this.physics.add.overlap(this.recycle, this.soda, this.pick, undefined, this);
-    this.physics.add.overlap(this.recycle, this.pbottle, this.pick, undefined, this);
+    this.physics.add.overlap(this.harmful, this.soda, this.wrongpick, undefined, this);
+    this.physics.add.overlap(this.electronic, this.soda, this.wrongpick, undefined, this);
+    this.physics.add.overlap(this.medical, this.soda, this.wrongpick, undefined, this);
+
+    this.physics.add.overlap(this.harmful, this.computer, this.wrongpick, undefined, this);
+    this.physics.add.overlap(this.recycle, this.computer, this.wrongpick, undefined, this);
+    this.physics.add.overlap(this.electronic, this.computer, this.pick, undefined, this);
+    this.physics.add.overlap(this.medical, this.computer, this.wrongpick, undefined, this);
+
     this.physics.add.overlap(this.harmful, this.battery, this.pick, undefined, this);
+    this.physics.add.overlap(this.recycle, this.battery, this.wrongpick, undefined, this);
+    this.physics.add.overlap(this.electronic, this.battery, this.wrongpick, undefined, this);
+    this.physics.add.overlap(this.medical, this.battery, this.wrongpick, undefined, this);
+
+    this.physics.add.overlap(this.harmful, this.pbottle, this.wrongpick, undefined, this);
+    this.physics.add.overlap(this.recycle, this.pbottle, this.pick, undefined, this);
+    this.physics.add.overlap(this.electronic, this.pbottle, this.wrongpick, undefined, this);
+    this.physics.add.overlap(this.medical, this.pbottle, this.wrongpick, undefined, this);
+
     this.physics.add.overlap(this.medical, this.syringe, this.pick, undefined, this);
+    this.physics.add.overlap(this.harmful, this.syringe, this.wrongpick, undefined, this);
+    this.physics.add.overlap(this.recycle, this.syringe, this.wrongpick, undefined, this);
+    this.physics.add.overlap(this.electronic, this.syringe, this.wrongpick, undefined, this);
     this.score = 0;
-    this.scoreLabel = this.add.text(900, 5, "SCORE " + this.score);
+    this.scoreLabel = this.add.text(875, 5, "SCORE " + this.score);
+
+    this.music = this.sound.add("gameplay");
+    var musicConfig ={
+      mute: false,
+      volume: 1,
+      rate:1,
+      detune:0,
+      seek:0,
+      loop: false,
+      delay:0
+    }
+    this.music.play(musicConfig);
+
+    this.correctsound = this.sound.add("correct");
+    this.wrongsound = this.sound.add("wrong");
+    this.dragsound = this.sound.add("drag");
+    this.startsound = this.sound.add("start");
   }
 
   update() {
@@ -117,7 +158,7 @@ export default class gameScene extends Phaser.Scene {
     for (let index = 0; index < this.items.length; index++){
       allThere = this.alltrash.includes(this.items[index]) + allThere;
     }
-    if (allThere == this.items.length -1 ){
+    if (allThere == this.items.length ){
       
       this.add.image(500,500,"congrats");
       this.add.text(400,750,"Your Score is "+ this.score);
@@ -130,7 +171,9 @@ export default class gameScene extends Phaser.Scene {
   }
 
   goHome(){
+    this.startsound.play();
     this.scene.start('tutorial');
+    this.music.stop();
 
   }
   movetrash(trash){
@@ -139,25 +182,40 @@ export default class gameScene extends Phaser.Scene {
 
     };
     if(trash.x > 1200){
+      this.wrongsound.play();
       var randomx = Phaser.Math.Between(-50, -200);
       trash.x = randomx;
       var randomy = Phaser.Math.Between(500, 800);
       trash.y = randomy;
-      this.score -= 40;
+      this.scorecal(-20);
     }
   }
+  wrongpick(trashbin,item){
+      
+      (async () => { 
+        this.battery.disableBody(true,true);
+        this.wrongsound.play();
+        var randomx = Phaser.Math.Between(-50, -800);
+        item.x = randomx;
+        var randomy = Phaser.Math.Between(500, 800);
+        item.y  = randomy;
 
+        await this.delay(1000);
+        this.battery.disableBody(false,false);
+        this.scorecal(-40);
+    })();
+      
+      
+      
+  }
   pick(trashbin,item){
     if (item == this.battery){
       this.index = "battery";
       if (this.items.indexOf(this.index) != -1){
         this.battery.disableBody(true,true);
-        this.alltrash.push("shirt");
-        this.score += 50;
-      }
-      else{
-        this.battery.setX(200);
-        this.battery.setY(60);
+        this.alltrash.push("battery");
+        this.correctsound.play();
+        this.scorecal(50);
       }
     }
 
@@ -166,11 +224,8 @@ export default class gameScene extends Phaser.Scene {
       if (this.items.indexOf(this.index) != -1){
         this.pbottle.disableBody(true,true);
         this.alltrash.push("pbottle");
-        this.score += 50;
-      }
-      else{
-        this.pbottle.setX(360);
-        this.pbottle.setY(60);
+        this.correctsound.play();
+        this.scorecal(50);
       }
     }
 
@@ -179,11 +234,8 @@ export default class gameScene extends Phaser.Scene {
       if (this.items.indexOf(this.index) != -1){
         this.soda.disableBody(true,true);
         this.alltrash.push("soda");
-        this.score += 50;
-      }
-      else{
-        this.soda.setX(360);
-        this.soda.setY(140);
+        this.correctsound.play();
+        this.scorecal(50);
       }
     }
 
@@ -192,11 +244,8 @@ export default class gameScene extends Phaser.Scene {
       if (this.items.indexOf(this.index) != -1){
         this.computer.disableBody(true,true);
         this.alltrash.push("computer");
-        this.score += 50;
-      }
-      else{
-        this.computer.setX(195);
-        this.computer.setY(145);
+        this.correctsound.play();
+        this.scorecal(50);
       }
     }
     if (item == this.syringe){
@@ -204,20 +253,29 @@ export default class gameScene extends Phaser.Scene {
       if (this.items.indexOf(this.index) != -1){
         this.syringe.disableBody(true,true);
         this.alltrash.push("syringe");
-        this.score += 50;
-      }
-      else{
-        this.syringe.setX(500);
-        this.syringe.setY(700);
+        this.correctsound.play();
+        this.scorecal(50);
       }
     }
     
   }
+  delay(ms: number) {
+    return new Promise( resolve => setTimeout(resolve, ms) );
+  }
+  scorecal(value){
+    if((this.score + value) < 0){
+      this.score = 0;
+    }
+    else{
+      this.score += value;
+    }
 
+  }
   startDrag(pointer, targets){
     this.input.off('pointerdown', this.startDrag, this);
     this.dragObj=targets[0];
     this.input.on('pointermove', this.doDrag, this);
+    this.dragsound.play();
     this.input.on('pointerup', this.stopDrag, this);
 
   }

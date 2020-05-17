@@ -19,3 +19,6 @@ gametitle:
 https://www6.flamingtext.com/net-fu/jobs/26645301503286310.html
 convavey belt:
 https://www.google.com/search?q=conveyor+belt+cartoon&tbm=isch&ved=2ahUKEwiJz82nqo7pAhWNADQIHYC2A4UQ2-cCegQIABAA&oq=conveyor+belt+cartoon&gs_lcp=CgNpbWcQAzICCAAyAggAMgIIADICCAAyAggAMgYIABAFEB4yBggAEAUQHjIGCAAQBRAeMgYIABAFEB4yBggAEAUQHlC4fliJhQFgs4YBaABwAHgAgAGzAogB6wqSAQUyLTQuMZgBAKABAaoBC2d3cy13aXotaW1n&sclient=img&ei=MNCpXon3C42B0PEPgO2OqAg&bih=734&biw=923&hl=en#imgrc=iZmcAeZNPzfN4M&imgdii=p2ODxGhWFDNZwM
+music:
+https://opengameart.org/content/512-sound-effects-8-bit-style
+https://opengameart.org/art-search-advanced?keys=&field_art_type_tid%5B%5D=12&sort_by=count&sort_order=DESC

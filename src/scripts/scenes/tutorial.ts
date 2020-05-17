@@ -1,4 +1,5 @@
 import ExampleObject from '../objects/exampleObject';
+import { Sleeping } from 'matter';
 
 export default class tutorial extends Phaser.Scene {
     
@@ -10,7 +11,8 @@ export default class tutorial extends Phaser.Scene {
     private readytext: any;
     private title: any;
     private totorialset: any;
-
+    private music: any;
+    private startsound: any;
     constructor(){
         super({key: 'tutorial'});
     }
@@ -36,9 +38,24 @@ export default class tutorial extends Phaser.Scene {
          .setInteractive()
          .on('pointerdown', ()=>this.goToGame());
         this.playbutton.setScale(0.45);
+
+        this.startsound = this.sound.add("start");
+        this.music = this.sound.add("tutorial_music");
+        var musicConfig ={
+          mute: false,
+          volume: 1,
+          rate:1,
+          detune:0,
+          seek:0,
+          loop: false,
+          delay:0
+        }
+        this.music.play(musicConfig);
     }
     goToGame(){
+        this.startsound.play();
         this.scene.start('MainScene');
+        this.music.stop();
     }
 
 }
