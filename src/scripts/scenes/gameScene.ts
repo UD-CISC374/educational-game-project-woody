@@ -123,9 +123,12 @@ export default class gameScene extends Phaser.Scene {
     this.physics.add.overlap(this.harmful, this.syringe, this.wrongpick, undefined, this);
     this.physics.add.overlap(this.recycle, this.syringe, this.wrongpick, undefined, this);
     this.physics.add.overlap(this.electronic, this.syringe, this.wrongpick, undefined, this);
+    
+    //Add scorelabel to the top-left corner
     this.score = 0;
     this.scoreLabel = this.add.text(875, 5, "SCORE " + this.score);
-
+    
+    //Add BGM to the main game-scene
     this.music = this.sound.add("gameplay");
     var musicConfig ={
       mute: false,
@@ -138,6 +141,7 @@ export default class gameScene extends Phaser.Scene {
     }
     this.music.play(musicConfig);
 
+    //Add sound SFX to actions
     this.correctsound = this.sound.add("correct");
     this.wrongsound = this.sound.add("wrong");
     this.dragsound = this.sound.add("drag");
@@ -145,22 +149,23 @@ export default class gameScene extends Phaser.Scene {
   }
 
   update() {
-    
+    //Move the trash and belt
     this.belt.tilePositionX -= 1;
     this.movetrash(this.soda);
     this.movetrash(this.syringe);
     this.movetrash(this.pbottle);
     this.movetrash(this.computer);
     this.movetrash(this.battery);
-
+    
+    //Update the score
     this.scoreLabel.text = "SCORE: " + this.score;
-
+    
+    //Check if all trash are picked, if so then stop the game
     let allThere = 0;
     for (let index = 0; index < this.items.length; index++){
       allThere = this.alltrash.includes(this.items[index]) + allThere;
     }
-    if (allThere == this.items.length ){
-      
+    if (allThere == this.items.length ){  
       this.add.image(500,500,"congrats");
       this.add.text(400,750,"Your Score is "+ this.score);
       this.done == true;
@@ -171,17 +176,20 @@ export default class gameScene extends Phaser.Scene {
 
   }
 
+  //Home button function
   goHome(){
     this.startsound.play();
     this.scene.start('tutorial');
     this.music.stop();
 
   }
+  //Reset the Pos of trash if goes out of boundary
   movetrash(trash){
     if(trash.y > 480){
       trash.x += 1
 
     };
+    //Re-generate trash if it moves out of right edge
     if(trash.x > 1200){
       this.wrongsound.play();
       var randomx = Phaser.Math.Between(-50, -200);
@@ -191,6 +199,8 @@ export default class gameScene extends Phaser.Scene {
       this.scorecal(-20);
     }
   }
+
+  //Assign action and sound if wrong trash are picked into the bin
   wrongpick(trashbin,item){
       
       (async () => { 
@@ -205,10 +215,9 @@ export default class gameScene extends Phaser.Scene {
         this.battery.disableBody(false,false);
         this.scorecal(-40);
     })();
-      
-      
-      
   }
+
+  //Assign action and sound if correct trash are picked into the bin
   pick(trashbin,item){
     if (item == this.battery){
       this.index = "battery";
@@ -260,9 +269,13 @@ export default class gameScene extends Phaser.Scene {
     }
     
   }
+
+  //Function to set up delay
   delay(ms: number) {
     return new Promise( resolve => setTimeout(resolve, ms) );
   }
+
+  //Calculate the score
   scorecal(value){
     if((this.score + value) < 0){
       this.score = 0;
@@ -272,6 +285,7 @@ export default class gameScene extends Phaser.Scene {
     }
 
   }
+  //Drag-related functions
   startDrag(pointer, targets){
     this.input.off('pointerdown', this.startDrag, this);
     this.dragObj=targets[0];

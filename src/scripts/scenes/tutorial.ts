@@ -18,27 +18,31 @@ export default class tutorial extends Phaser.Scene {
     }
 
     create(){
+        //set background
         this.background=this.add.image(0,0, "background-1");
         this.background.setScale(2);
 
+        //set game title
         this.gametitle = this.add.image(500,50,"gametitle");
         this.gametitle.setScale(0.7);
 
+        //adjust the sub-title and add image
         this.title = this.add.image(170,200,"t-title");
         this.title.setScale(0.8);
         this.instruction = this.add.image(170,400,"instruction");
         this.instruction.setScale(1.5);
-  
+
+        //add tutorial note image
         this.notepad = this.add.image(700,400,"notepad");
         this.notepad.setScale(0.5);
-
         this.totorialset = this.add.image(500,780,"tutorialset");
         this.readytext = this.add.image(530,950,"readytext");
         this.playbutton=this.add.image(120,930,"play")
          .setInteractive()
          .on('pointerdown', ()=>this.goToGame());
         this.playbutton.setScale(0.45);
-
+        
+        //add tutorial BGM
         this.startsound = this.sound.add("start");
         this.music = this.sound.add("tutorial_music");
         var musicConfig ={
