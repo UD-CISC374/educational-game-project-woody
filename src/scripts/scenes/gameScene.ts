@@ -21,7 +21,7 @@ export default class gameScene extends Phaser.Scene {
   private index: any;
   private dragObj: any;
   private hint:any;
-  private scoreLabel;
+  private scoreLabel: any;
   private score: number;
   private music: any;
   private correctsound: any;
@@ -48,7 +48,7 @@ export default class gameScene extends Phaser.Scene {
     this.hint.setScale(0.7);
 
     //Make list of items for this level
-    this.items = ["computer", "pbottle", "soda","soda","battery","battery","syringe"];
+    this.items = ["computer", "pbottle", "soda","battery","syringe"];
     this.trashbin = ["harmful", "recycle", "electronic", "medical"];
 
     //Make list of items selected
@@ -96,7 +96,7 @@ export default class gameScene extends Phaser.Scene {
     this.soda.setScale(0.05);
     this.soda.setInteractive();
     this.input.setDraggable(this.soda);
-
+    
     //Set up dragging into basket
     this.input.on('pointerdown', this.startDrag, this);
     this.physics.add.overlap(this.recycle, this.soda, this.pick, undefined, this);
@@ -154,6 +154,7 @@ export default class gameScene extends Phaser.Scene {
     this.movetrash(this.battery);
 
     this.scoreLabel.text = "SCORE: " + this.score;
+
     let allThere = 0;
     for (let index = 0; index < this.items.length; index++){
       allThere = this.alltrash.includes(this.items[index]) + allThere;
