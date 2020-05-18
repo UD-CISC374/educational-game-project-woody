@@ -99,21 +99,21 @@ Trash bin(3-5 different trash bins for different trash)
 
 ## Core Gameplay Mechanics (Detailed)
 
-- Different Trash type will be randomly generated from the list at the bottom of the screen.
-- 3 - 5 trash bins will be on the top side of the screen
+- Different Trash type will be randomly generated from the list at the left edge of the screen.
+- 3 - 5 trash bins will be on the left side of the screen
 - Mouse drag trash with left click
 - if correct trash overlap with correct trash bin, you will earn point; otherwise lose point.
 
     
 ## Feedback
 
-Player can clearly see points add/deduct from the score board in the screen. Right/Wrong click will also turn trash bin into green/red for seconds.
+Player can clearly see points add/deduct from the score board in the screen. Right/Wrong click will also trigger different sound to tell the player.
 
 # Story and Gameplay
 
 ## Presentation of Rules
 
-The game will provide tutorial and explain mouse function, how to earn point and how will you lose point. It will also give demo of a simple gameplay.
+The game will provide tutorial and explain mouse function, how to earn point and how will you lose point.
 
 ## Presentation of Content
 
@@ -138,13 +138,8 @@ Game will be using many realistic objects, people will be familiarize with the t
 - Trash list
   - battery
   - computer
-  - plastic bottle
-  - plastic bag
-  - tissue
-  - food
+  - plastic bottle 
   - used syringes
-  - takeout bag
-  - wood
   - electronic component  
   - paper
   - 
@@ -153,9 +148,8 @@ Game will be using many realistic objects, people will be familiarize with the t
   - trash bin(blue)
   - trash bin(yellow)
   - trash bin(green)
-  - trash bin(white)
 - Environment Art/Textures:
-  - landfill background
+  - land background
 
 
 ## Audio
@@ -164,12 +158,17 @@ Game will be using many realistic objects, people will be familiarize with the t
 *Game region/phase/time are ways of designating a particularly important place in the game.*
 
 - Music List (Ambient sound)
-    - TBD
+    - Game play music - Caketown 1.mp3
+    - Tutorial music - TownTheme.mp3
   
 *Game Interactions are things that trigger SFX, like character movement, hitting a spiky enemy, collecting a coin.*
 
 - Sound List (SFX)
-  - TBD
+  - put into the correct trash bin: Correct.wav
+  - put into the wrong trash bin: wrong.wav
+  - click left-mouse: drag.wav
+  - click start or home button: start.wav
+  
 
 
 # Metadata
